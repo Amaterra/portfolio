@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <script src="https://kit.fontawesome.com/726c072803.js" crossorigin="anonymous"></script>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
+
+
+   <link rel="stylesheet" href="/amatera-portfolio/style.css">
+   <link rel="stylesheet" href="/amatera-portfolio/media.css">
+
+   <title>AMⱯTERA</title>
+</head>
+
+<body class="body">
+
+   <section class="section-main">
+
+      <!-- NAVIGATION -->
+
+      <section class="section-main__menu">
+         <img class="section-main__photo" src="/amatera-portfolio/images/portfolio-img.png" alt="my photo">
+         <ul class="section-main__list">
+            <li class="list about-me active"><i class="fa-solid fa-house icon-nav"></i>About me</li>
+            <li class="list portfolio"><i class="fa-solid fa-image icon-nav"></i>Portfolio</li>
+            <li class="list contacts"><i class="fa-solid fa-address-card icon-nav"></i>Contact</li>
+         </ul>
+
+         <button class="download-button">Download CV</button>
+      </section>
+
+      <section class="section-content">
+         <div class="section-content__background"></div>
+
+         <!-- SECTION ABOUT ME -->
+
+         <div class="section-content-main section-about-me show">
+            <img class="section-about-me__photo" src="/amatera-portfolio/images/portfolio-img.png" alt="my photo">
+            <h1 class="section-content-main__title">About Me</h1>
+            <div class="section-about-me__discription">
+               <p class="section-about-me__text">
+                  We can also support keyboard users with this technique, by adding a tabindex of 0 to make each span
+                  keyboard focusable, and using a CSS :focus selector. This shows how flexible ::before and ::after can
+                  be, though for the most accessible experience a semantic disclosure widget created in some other way
+                  (such as with details and summary elements) is likely to be more appropriate.</p>
+            </div>
+
+            <div class="section-skills">
+               <h3 class="section-skills__title">Skills</h3>
+               <ul class="section-skills__list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Git</li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- SECTION PORTFOLIO -->
+
+         <div class="section-content-main section-portfolio">
+            <h1 class="section-portfolio__title">Portfolio</h1>
+            <div class="wrapper">
+               <span class="button-arrow-left" id="arrow-left"></span>
+               <div class="slider">
+                  <div class="section-portfolio__products slider-line" id="slider-line-cards">
+                     <div class="section-portfolio__card interno slider-card">
+                        <p class="section-portfolio__title-card interno-title">Interno</p>
+                        <a href="https://amaterra.github.io/interno/" target=_blank><img
+                              class="section-portfolio__img  " src="/amatera-portfolio/images/interno-img.png"></a>
+                     </div>
+                     <div class="section-portfolio__card taste-eat slider-card">
+                        <div class="section-portfolio__title-card">
+                           <p class="section-portfolio__text">Taste Eat</p>
+                        </div>
+                        <a href="https://amaterra.github.io/taste-eat/" target=_blank><img
+                              class="section-portfolio__img" src="/amatera-portfolio/images/tasteeat-img.png"></a>
+                     </div>
+                  </div>
+               </div>
+               <span class="button-arrow-right" id="arrow-right"></span>
+            </div>
+         </div>
+
+         <!-- SECTION CONTACTS -->
+
+         <div class="section-content-main section-contacts">
+            <h1 class="section-contacts__title">Contact</h1>
+
+            <form action="send-mail.php" id="form" class="formInputs">
+               <div class="form__label">
+                  <input class="input input-mail _req _email" id="formMail" type="mail" name="email"
+                     placeholder="Your Email">
+                  <input class="input input-name _req" id="formName" type="text" name="name" placeholder="Your Name">
+                  <textarea class="input input-message _req" id="formMessage" type="text" name="message"
+                     placeholder="Your Message"></textarea>
+
+                  <div class="input__add-file">
+                     <input class="input__file" id="formFile" accept=".jpg .png .pdf .docx .doc" type="file"
+                        name="file">
+                     <div class="file__button">Add File</div>
+                  </div>
+
+                  <div class="file__preview"></div>
+
+                  <button class="button-form" type="submit">Send message</button>
+               </div>
+            </form>
+
+            <div class="section-contacts__contact-list">
+               <div class="section-contact">
+                  <a class="section-contacts__icon" href="mailto:ami.less@yandex.ru"> <i
+                        class="fa-regular fa-envelope"></i></a>
+               </div>
+
+               <div class="section-contact">
+                  <a class="section-contacts__icon" href="tel:+37379561338"><i class="fa-solid fa-phone"></i></a>
+               </div>
+
+               <div class="section-contact">
+                  <a class="section-contacts__icon" href="https://github.com/Amaterra" target="_blank"><i
+                        class="fa-brands fa-github"></i></a>
+               </div>
+            </div>
+         </div>
+      </section>
+   </section>
+
+   <script src="/amatera-portfolio/script/script.js"></script>
+</body>
+
+</html>
