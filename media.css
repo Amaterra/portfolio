@@ -152,7 +152,7 @@
 
    .slider {
       position: relative;
-      max-width: 250px;
+      width: 250px;
       overflow: hidden;
    }
 
