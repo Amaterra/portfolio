@@ -148,17 +148,21 @@
       gap: 7vw;
       align-items: center;
       margin-top: 25%;
+
    }
 
    .slider {
+      /* display: flex; */
       position: relative;
       width: 250px;
       overflow: hidden;
    }
 
    .slider-line {
+      display: flex;
       position: relative;
       transition: all 1s inherit;
+      /* width: 1000px; */
    }
 
    /* CONTACTS */
@@ -193,7 +197,7 @@
       gap: 15px;
    }
 
-   .slider {
+   /* .slider {
       width: 70%;
    }
 
@@ -201,9 +205,9 @@
       justify-content: center;
       gap: 10px;
 
-   }
+   } */
 
-   .section-portfolio__title-card {
+   /* .section-portfolio__title-card {
       font-size: 17px;
       letter-spacing: 5px;
       width: 210px;
@@ -211,9 +215,7 @@
 
    .section-portfolio__img {
       width: 220px;
-      height: auto;
-   }
-
+      height: auto; */
    .input {
       width: 280px;
       height: 40px;

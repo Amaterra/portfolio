@@ -132,7 +132,6 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
-   flex-wrap: wrap;
 }
 
 .section-content-main__title {
@@ -197,9 +196,7 @@ body {
    font-family: 'Josefin Sans', sans-serif;
 }
 
-.slider {
-   width: 90%;
-}
+
 
 .section-portfolio__products {
    display: flex;

@@ -20,6 +20,10 @@ tabPortfolio.addEventListener('click', function () {
    showPortfolio.classList.add('show');
    showAboutMe.classList.remove('show');
    showContacts.classList.remove('show');
+
+
+   init()
+   rollSlider()
 });
 
 tabContacts.addEventListener('click', function () {
@@ -59,6 +63,7 @@ if (window.screen.width <= 900) {
          item.style.width = width + 'px';
          item.style.height = 'auto';
       });
+      rollSlider()
 
    }
    window.addEventListener('resize', init);
@@ -66,7 +71,7 @@ if (window.screen.width <= 900) {
 
    const buttonNext = document.querySelector('.button-arrow-right');
 
-   let sliderRolling = buttonNext.addEventListener('click', function () {
+   buttonNext.addEventListener('click', function () {
       count++;
       if (count >= sliderCard.length) {
          count = 0;
