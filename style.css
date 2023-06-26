@@ -81,7 +81,6 @@ body {
    letter-spacing: 2px;
    font-weight: 400;
    font-size: 12px;
-   position: relative;
    transition: all 500ms ease-in-out;
    left: 4%;
    position: absolute;
@@ -187,6 +186,8 @@ body {
    align-items: center;
 }
 
+
+
 .section-portfolio__title {
    margin-bottom: 7vw;
    color: azure;
@@ -196,12 +197,13 @@ body {
    font-family: 'Josefin Sans', sans-serif;
 }
 
-
-
 .section-portfolio__products {
    display: flex;
    justify-content: center;
    gap: 5vw;
+
+
+
 }
 
 .section-portfolio__img {
@@ -209,6 +211,8 @@ body {
    transition: 1s;
    width: 250px;
    height: auto;
+
+
 }
 
 .section-portfolio__img:hover {
@@ -228,13 +232,19 @@ body {
    font-family: 'Josefin Sans', sans-serif;
    width: 250px;
    text-align: center;
+
+
+}
+
+.download-button-for-portfolio {
+   display: none;
 }
 
 /* CONTACTS */
 
-.section-contacts {
+/* .section-contacts {
    display: none;
-}
+} */
 
 .section-contacts.show {
    display: flex;
@@ -325,7 +335,7 @@ body {
    font-weight: 100;
 }
 
-.section-contacts:hover {
+.section-contacts__icon:hover {
    text-shadow: 1px 1px 20px #cdcfd1;
 }
 
