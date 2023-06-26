@@ -22,20 +22,13 @@
 
    .section-main__menu {
       order: 2;
-      /* margin: 0;
-      padding: 0; */
       position: sticky;
-      /* bottom: 0; */
       z-index: 5;
    }
 
    .section-main__photo {
       display: none;
    }
-
-   /* .section-content__background {
-      height: 100%;
-   } */
 
    .section-main__list {
       display: flex;
@@ -61,7 +54,6 @@
       display: none;
    }
 
-
    .icon-nav {
       display: block;
       font-size: calc(14px + (29 - 14)*((100vw - 300px) / (1024 - 300)));
@@ -70,19 +62,9 @@
 
    /* ABOUT ME */
 
-   /* .download-button {
-      display: none;
-   } */
-
    .download-button {
-      /* position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 170px; */
       display: none;
    }
-
-
 
    .section-about-me__photo {
       display: block;
@@ -94,33 +76,25 @@
    .section-content-main__title,
    .section-portfolio__title,
    .section-contacts__title {
-      /* font-size: 50px;
-      letter-spacing: 15px; */
       font-size: calc(40px + (50 - 34)*((100vw - 300px) / (1024 - 300)));
       letter-spacing: calc(13px + (15 - 13)*((100vw - 300px) / (1024 - 300)));
       margin-top: 4vw;
    }
 
    .section-skills__title {
-      /* font-size: calc(12px + (25 - 12)*((100vw - 300px) / (1024 - 300)));
-      letter-spacing: calc(5px + (20 - 5)*((100vw - 300px) / (1024 - 300))); */
-
       font-size: 30px;
       letter-spacing: 10px;
    }
 
    .section-skills__list {
-      /* font-size: calc(10px + (20 - 10)*((100vw - 300px) / (1024 - 300))); */
       font-size: 25px;
       display: flex;
       gap: 20px;
    }
 
    .section-about-me__discription {
-      /* font-size: calc(12px + (20 - 12)*((100vw - 300px) / (1024 - 300))); */
       width: 80%;
       text-align: justify;
-      /* line-height: calc(20px + (30 - 20)*((100vw - 300px) / (1024 - 300))); */
       font-size: 30px;
       line-height: 45px;
    }
@@ -402,27 +376,19 @@
 
 @media screen and (max-width: 350px) {
 
+   /* ABOUT ME */
 
-
-   .slider {
-      width: 70%;
+   .section-about-me__discription {
+      line-height: 23px;
    }
 
-   .wrapper {
-      justify-content: center;
-      gap: 10px;
 
-   }
+   /* PORTFOLIO */
 
-   .section-portfolio__title-card {
-      font-size: 17px;
-      letter-spacing: 5px;
-      width: 210px;
-   }
-
-   .section-portfolio__img {
-      width: 220px;
-      height: auto;
+   .download-button-for-portfolio {
+      padding: 13px 15px;
+      font-size: 10px;
+      margin-top: 15%;
    }
 
    .input {
