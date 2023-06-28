@@ -35,16 +35,18 @@ body {
 
 .section-main__list {
    list-style: none;
-   position: absolute;
-   top: 50%;
-   left: 5%;
+   position: relative;
+   top: 15%;
+   left: 50%;
+   transform: translateX(-50%);
 }
 
 .list {
-   font-family: 'Dosis', sans-serif;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
    color: #cdcfd1;
    text-transform: uppercase;
-   font-size: 18px;
+   font-size: 20px;
    letter-spacing: 5px;
    text-align: center;
    margin-bottom: 25px;
@@ -86,6 +88,7 @@ body {
    position: absolute;
    bottom: 5%;
    z-index: 10;
+   text-decoration: none;
 }
 
 .download-button:hover {
@@ -186,8 +189,6 @@ body {
    align-items: center;
 }
 
-
-
 .section-portfolio__title {
    margin-bottom: 7vw;
    color: azure;
@@ -201,9 +202,6 @@ body {
    display: flex;
    justify-content: center;
    gap: 5vw;
-
-
-
 }
 
 .section-portfolio__img {
@@ -211,8 +209,6 @@ body {
    transition: 1s;
    width: 250px;
    height: auto;
-
-
 }
 
 .section-portfolio__img:hover {
@@ -232,8 +228,6 @@ body {
    font-family: 'Josefin Sans', sans-serif;
    width: 250px;
    text-align: center;
-
-
 }
 
 .download-button-for-portfolio {
@@ -242,9 +236,9 @@ body {
 
 /* CONTACTS */
 
-/* .section-contacts {
-   display: none;
-} */
+.section-contacts {
+   width: 100%;
+}
 
 .section-contacts.show {
    display: flex;
@@ -266,37 +260,8 @@ body {
    font-family: 'Josefin Sans', sans-serif;
 }
 
-.formInputs {
-   display: flex;
-   flex-direction: column;
-}
-
-.form__label {
-   display: flex;
-   flex-direction: column;
-   gap: 15px;
-}
-
-.input {
-   background-color: rgba(83, 87, 94, 0.3);
-   border: none;
-   padding-left: 10px;
-   width: 410px;
-   height: 40px;
-   color: #cdcfd1;
-   font-size: 14px;
-   outline: none;
-   font-family: 'Josefin Sans', sans-serif;
-}
-
-.input-message {
-   height: 150px;
-}
-
-.button-form {
-
+.button-send-message {
    padding: 18px 20px;
-   width: 200px;
    border: none;
    background-color: rgba(205, 207, 209, 0.7);
    cursor: pointer;
@@ -306,27 +271,28 @@ body {
    font-weight: 400;
    font-size: 12px;
    position: relative;
-   left: 50%;
-   transform: translateX(-50%);
    color: #323237;
    transition: all 150ms ease-in-out;
-   margin-top: 1vw;
-   margin-bottom: 4vw;
+   text-decoration: none;
 }
 
-.button-form:hover {
+.button-send-message:hover {
    background-color: #323237;
    color: #cdcfd1;
 }
 
 .section-contacts__contact-list {
    display: flex;
-   align-items: center;
-   justify-content: space-around;
-   width: 40%;
-   position: fixed;
-   bottom: 5%;
+   position: relative;
+   flex-direction: column;
+   margin: 15% 0;
+   gap: 35px;
    z-index: 10;
+}
+
+.section-contact {
+   display: flex;
+   gap: 15px;
 }
 
 .section-contacts__icon {
@@ -339,41 +305,9 @@ body {
    text-shadow: 1px 1px 20px #cdcfd1;
 }
 
-.input-message {
-   color: #cdcfd1;
-   font-size: 14.5px;
-   padding-top: 10px;
-   resize: none;
-   height: 200px;
-   display: block;
-}
-
-.input._error {
-   box-shadow: 0 0 7px 5px #7a0008;
-}
-
-.file__button {
-   color: black;
-   background-color: #cdcfd1;
+.section-contact__contact {
    font-family: 'Josefin Sans', sans-serif;
-   padding: 7px;
-   max-width: 80px;
-   font-size: 14px;
-   text-align: center;
-}
-
-.input__add-file {
-   position: relative;
-   max-width: 80px;
-}
-
-.input__file {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   opacity: 0;
-   font-size: 0;
-   cursor: pointer;
+   color: aliceblue;
+   line-height: 30px;
+   font-size: 20px;
 }

@@ -10,15 +10,19 @@
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
-
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="media.css">
+
+
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
    <title>AMⱯTERA</title>
 </head>
@@ -37,7 +41,9 @@
             <li class="list contacts"><i class="fa-solid fa-address-card icon-nav"></i>Contact</li>
          </ul>
 
-         <button class="download-button">Download CV</button>
+         <a href="test.pdf" download="" class="download-button">Download
+            CV</a>
+
       </section>
 
       <section class="section-content">
@@ -57,8 +63,6 @@
                   be, though for the most accessible experience a semantic disclosure widget created in some other way
                   (such as with details and summary elements) is likely to be more appropriate.</p>
             </div>
-
-
 
             <div class="section-skills">
                <h3 class="section-skills__title">Skills</h3>
@@ -96,13 +100,13 @@
                         <a href="https://amaterra.github.io/taste-eat/" target=_blank><img
                               class="section-portfolio__img" src="images/tasteeat-img.png"></a>
                      </div>
-
                   </div>
                </div>
                <span class="button-arrow-right" id="arrow-right"></span>
             </div>
 
-            <button class="download-button-for-portfolio">Download CV</button>
+            <a class="download-button-for-portfolio" href="test.pdf" download="">Download CV</a>
+
          </div>
 
          <!-- SECTION CONTACTS -->
@@ -110,41 +114,28 @@
          <div class="section-content-main section-contacts">
             <h1 class="section-contacts__title">Contact</h1>
 
-            <form action="#" id="form" class="formInputs">
-               <div class="form__label">
-                  <input class="input input-mail _req _email" id="formMail" type="mail" name="email"
-                     placeholder="Your Email">
-                  <input class="input input-name _req" id="formName" type="text" name="name" placeholder="Your Name">
-                  <textarea class="input input-message _req" id="formMessage" type="text" name="message"
-                     placeholder="Your Message"></textarea>
-
-                  <div class="input__add-file">
-                     <input class="input__file" id="formFile" accept=".jpg .png .pdf .docx .doc" type="file"
-                        name="file">
-                     <div class="file__button">Add File</div>
-                  </div>
-
-                  <div class="file__preview"></div>
-
-                  <button class="button-form" type="submit">Send message</button>
-               </div>
-            </form>
-
             <div class="section-contacts__contact-list">
-               <div class="section-contact">
-                  <a class="section-contacts__icon" href="mailto:ami.less@yandex.ru"> <i
-                        class="fa-regular fa-envelope"></i></a>
-               </div>
-
-               <div class="section-contact">
-                  <a class="section-contacts__icon" href="tel:+37379561338"><i class="fa-solid fa-phone"></i></a>
-               </div>
 
                <div class="section-contact">
                   <a class="section-contacts__icon" href="https://github.com/Amaterra" target="_blank"><i
                         class="fa-brands fa-github"></i></a>
+                  <p class="section-contact__contact">Amaterra</p>
+               </div>
+
+               <div class="section-contact">
+                  <a class="section-contacts__icon" href="tel:+37379561338"><i class="fa-solid fa-phone"></i></a>
+                  <p class="section-contact__contact">+37379561338</p>
+               </div>
+
+               <div class="section-contact">
+                  <a class="section-contacts__icon" href="mailto:amate.ra@yandex.ru"> <i
+                        class="fa-regular fa-envelope"></i></a>
+                  <p class="section-contact__contact">amate.ra@yandex.ru</p>
                </div>
             </div>
+
+            <a class="button-send-message" href="mailto:amate.ra@yandex.ru">Send me message</a>
+
          </div>
       </section>
    </section>

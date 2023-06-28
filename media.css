@@ -116,24 +116,13 @@
       position: relative;
       display: block;
       z-index: 10;
-
       margin-top: 30%;
+      text-decoration: none;
    }
-
-   /* .section-portfolio {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 95%;
-   } */
-
-
 
    .section-portfolio__title {
       margin-bottom: 25%;
    }
-
-
 
    /* CONTACTS */
 
@@ -141,70 +130,41 @@
       margin-bottom: 7vw;
    }
 
-   .input {
-      width: 550px;
-      height: 50px;
-      padding-left: 15px;
-      font-size: 20px;
-   }
-
-   .input-message {
-      height: 300px;
-   }
-
-   .section-contacts__contact-list {
-      width: 80%;
-      bottom: 15%;
-   }
-
-
 }
 
-
-/* @media screen and (max-height: 1250px) {
-   .download-button {
-      display: none;
-   }
-} */
-
 @media screen and (max-width: 900px) {
+
+   /* ABOUT ME */
 
    .section-content-main__title,
    .section-portfolio__title,
    .section-contacts__title {
       font-size: 40px;
       letter-spacing: 15px;
-      /* font-size: calc(30px + (50 - 30)*((100vw - 300px) / (1024 - 300))); */
    }
 
    .section-skills__title {
-      /* font-size: calc(12px + (25 - 12)*((100vw - 300px) / (1024 - 300)));
-      letter-spacing: calc(5px + (20 - 5)*((100vw - 300px) / (1024 - 300))); */
-
       font-size: 20px;
       letter-spacing: 10px;
    }
 
    .section-skills__list {
-      /* font-size: calc(10px + (20 - 10)*((100vw - 300px) / (1024 - 300))); */
       font-size: 20px;
       display: flex;
       gap: 20px;
    }
 
    .section-about-me__discription {
-      /* font-size: calc(12px + (20 - 12)*((100vw - 300px) / (1024 - 300))); */
       width: 80%;
       text-align: justify;
-      /* line-height: calc(20px + (30 - 20)*((100vw - 300px) / (1024 - 300))); */
       font-size: 25px;
       line-height: 45px;
    }
-
-
 }
 
 @media screen and (max-width: 700px) {
+
+   /* ABOUT ME */
 
    .section-content-main__title,
    .section-portfolio__title,
@@ -227,7 +187,6 @@
       width: 80%;
       text-align: justify;
       line-height: calc(30px + (45 - 30)*((100vw - 300px) / (1024 - 300)));
-
    }
 
    /* PORTFOLIO */
@@ -272,7 +231,6 @@
       gap: 3vw;
       align-items: center;
       margin-top: 25%;
-
       height: 100%;
    }
 
@@ -281,43 +239,19 @@
       position: relative;
       width: 250px;
       overflow: hidden;
-
    }
 
    .slider-line {
       display: flex;
       position: relative;
       transition: all 1s inherit;
-
    }
-
 }
 
 @media screen and (max-width: 570px) {
 
-   .input {
-      width: 310px;
-      height: 40px;
-      font-size: 14px;
-   }
 
-   .input-message {
-      height: 150px;
-   }
-
-   .button-form {
-      padding: 15px 10px;
-      font-size: 10px;
-      width: 150px;
-   }
-
-
-   /* .slider {
-      display: flex;
-      position: relative;
-      width: 200px;
-      overflow: hidden;
-   } */
+   /* PORTFOLIO */
 
    .section-portfolio__img {
       width: 200px;
@@ -335,43 +269,27 @@
       justify-content: center;
    }
 
+   /* CONTACTS */
 
-
+   .button-send-message {
+      padding: 15px;
+      font-size: 10px;
+      margin-top: 50vw;
+   }
 }
 
 @media screen and (max-width: 400px) {
 
-   .form__label {
-      gap: 10px;
-   }
+   /* CONTACTS */
 
-   .input {
-      width: 230px;
-      height: 30px;
-      font-size: 12px;
-   }
-
-   .input-message {
-      height: 150px;
-   }
-
-   .button-form {
+   .button-send-message {
       padding: 13px 10px;
       font-size: 9px;
-      width: 130px;
-   }
-
-   .file__button {
-      padding: 4px;
-      max-width: 60px;
-      font-size: 12px;
-      text-align: center;
    }
 
    .section-contacts__icon {
-      font-size: 20px;
+      font-size: 27px;
    }
-
 }
 
 @media screen and (max-width: 350px) {
@@ -382,21 +300,11 @@
       line-height: 23px;
    }
 
-
    /* PORTFOLIO */
 
    .download-button-for-portfolio {
       padding: 13px 15px;
       font-size: 10px;
       margin-top: 15%;
-   }
-
-   .input {
-      width: 280px;
-      height: 40px;
-   }
-
-   .input-message {
-      height: 150px;
    }
 }
