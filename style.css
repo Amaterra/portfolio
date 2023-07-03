@@ -26,6 +26,9 @@ body {
 
 .section-main__menu {
    background-color: #03090B;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .section-main__photo {
@@ -37,8 +40,8 @@ body {
    list-style: none;
    position: relative;
    top: 15%;
-   left: 50%;
-   transform: translateX(-50%);
+   /* left: 50%;
+   transform: translateX(-50%); */
 }
 
 .list {
@@ -46,10 +49,10 @@ body {
    font-weight: 400;
    color: #cdcfd1;
    text-transform: uppercase;
-   font-size: 20px;
+   font-size: 18px;
    letter-spacing: 5px;
    text-align: center;
-   margin-bottom: 25px;
+   margin-bottom: 27px;
    cursor: pointer;
 }
 
@@ -84,11 +87,15 @@ body {
    font-weight: 400;
    font-size: 12px;
    transition: all 500ms ease-in-out;
-   left: 4%;
+   /* left: 4%; */
    position: absolute;
    bottom: 5%;
    z-index: 10;
    text-decoration: none;
+
+
+
+
 }
 
 .download-button:hover {
@@ -128,7 +135,27 @@ body {
    display: none;
 }
 
+
+/* CONTENT */
+
+/* .section-content-main {
+   transform: translate(0px, 120%);
+   opacity: 0;
+   transition: all 5s ease 0s;
+}
+
+.section-content-main.active-animation {
+   transform: translate(0, 0);
+   opacity: 1;
+   transition: all 5s ease 0s;
+} */
+
 /* SECTION ABOUT ME */
+
+
+.section-about-me {
+   display: none;
+}
 
 .section-about-me.show {
    display: flex;
@@ -182,6 +209,10 @@ body {
 }
 
 /* PORTFOLIO */
+
+.section-portfolio {
+   display: none;
+}
 
 .section-portfolio.show {
    display: flex;
@@ -237,7 +268,7 @@ body {
 /* CONTACTS */
 
 .section-contacts {
-   width: 100%;
+   display: none;
 }
 
 .section-contacts.show {

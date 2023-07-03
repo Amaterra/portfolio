@@ -11,15 +11,15 @@ const showContacts = document.querySelector('.section-contacts');
 const activeMenu = document.querySelector('.section-main__list');
 
 tabAboutMe.addEventListener('click', function () {
-   showAboutMe.classList.add('show');
-   showPortfolio.classList.remove('show');
-   showContacts.classList.remove('show');
+   showAboutMe.classList.add('show', 'active-animation');
+   showPortfolio.classList.remove('show', 'active-animation');
+   showContacts.classList.remove('show', 'active-animation');
 });
 
 tabPortfolio.addEventListener('click', function () {
-   showPortfolio.classList.add('show');
-   showAboutMe.classList.remove('show');
-   showContacts.classList.remove('show');
+   showPortfolio.classList.add('show', 'active-animation');
+   showAboutMe.classList.remove('show', 'active-animation');
+   showContacts.classList.remove('show'), 'active-animation';
 
 
    init()
@@ -27,9 +27,9 @@ tabPortfolio.addEventListener('click', function () {
 });
 
 tabContacts.addEventListener('click', function () {
-   showContacts.classList.add('show');
-   showAboutMe.classList.remove('show');
-   showPortfolio.classList.remove('show');
+   showContacts.classList.add('show', 'active-animation');
+   showAboutMe.classList.remove('show', 'active-animation');
+   showPortfolio.classList.remove('show', 'active-animation');
 
 });
 
@@ -173,3 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
    })
 
 });
+
+
+/* ANIMATION */
+
