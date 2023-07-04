@@ -101,6 +101,13 @@
 
    /* PORTFOLIO */
 
+   .section-portfolio {
+      height: 90%;
+
+      justify-content: space-between;
+
+   }
+
    .download-button-for-portfolio {
       background-color: rgba(205, 207, 209, 0.7);
       color: #323237;
@@ -116,18 +123,32 @@
       position: relative;
       display: block;
       z-index: 10;
-      margin-top: 30%;
+      /* margin-top: 30%; */
       text-decoration: none;
+
+
+      bottom: 0;
    }
 
    .section-portfolio__title {
-      margin-bottom: 25%;
+      margin-bottom: 0;
    }
 
    /* CONTACTS */
 
-   .section-contacts__title {
+   .section-contacts {
+
+      height: 90%;
+
+      justify-content: space-between;
+   }
+
+   /* .section-contacts__title {
       margin-bottom: 7vw;
+   } */
+
+   .section-contacts__contact-list {
+      margin-bottom: 30%;
    }
 
 }
@@ -195,10 +216,6 @@
       gap: 0;
    }
 
-   .section-portfolio__title {
-      margin-bottom: 0;
-   }
-
    .section-portfolio__img:hover {
       transform: none;
       box-shadow: none;
@@ -213,6 +230,7 @@
       height: 15px;
       transform: rotate(45deg);
       cursor: pointer;
+      user-select: none;
    }
 
    .button-arrow-right {
@@ -224,13 +242,14 @@
       height: 15px;
       transform: rotate(45deg);
       cursor: pointer;
+      user-select: none;
    }
 
    .wrapper {
       display: flex;
       gap: 3vw;
       align-items: center;
-      margin-top: 25%;
+      /* margin-top: 25%; */
       height: 100%;
    }
 
@@ -244,7 +263,7 @@
    .slider-line {
       display: flex;
       position: relative;
-      transition: all 1s inherit;
+      transition: all 1.2s ease-in-out;
    }
 }
 
@@ -267,6 +286,7 @@
    .section-portfolio__card {
       display: flex;
       justify-content: center;
+      margin-bottom: 30px;
    }
 
    /* CONTACTS */
@@ -274,7 +294,7 @@
    .button-send-message {
       padding: 15px;
       font-size: 10px;
-      margin-top: 50vw;
+      /* margin-top: 50vw; */
    }
 
    /* PORTFOLIO */
@@ -303,7 +323,7 @@
    .download-button-for-portfolio {
       padding: 13px 10px;
       font-size: 9px;
-      margin-top: 15%;
+      /* margin-top: 15%; */
    }
 }
 

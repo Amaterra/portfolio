@@ -1,4 +1,4 @@
-//переключение меню
+//menu tab-tab
 
 const tabAboutMe = document.querySelector('.about-me');
 const tabPortfolio = document.querySelector('.portfolio');
@@ -33,7 +33,7 @@ tabContacts.addEventListener('click', function () {
 
 });
 
-//подстветка навигации
+//navigation highlight
 
 const list = document.querySelectorAll('li');
 for (let i = 0; i < list.length; i++) {
@@ -47,9 +47,9 @@ for (let i = 0; i < list.length; i++) {
    }
 }
 
-//Slider
+//slider
 
-if (window.screen.width <= 900) {
+if (window.screen.width <= 700) {
 
    const sliderCard = document.querySelectorAll('.slider-card');
    const sliderLine = document.querySelector('.slider-line');
@@ -80,7 +80,6 @@ if (window.screen.width <= 900) {
       rollSlider()
    });
 
-
    const buttonPrev = document.querySelector('.button-arrow-left');
 
    buttonPrev.addEventListener('click', function () {
@@ -95,85 +94,73 @@ if (window.screen.width <= 900) {
    function rollSlider() {
       sliderLine.style.transform = 'translate(-' + count * width + 'px)';
    }
+
+   //swipe
+
+   function nextSwipe() {
+      count++;
+      if (count >= sliderCard.length) {
+         count = 0;
+      }
+      rollSlider()
+
+      function rollSlider() {
+         sliderLine.style.transform = 'translate(-' + count * width + 'px)';
+      }
+   }
+
+   function prevSwipe() {
+
+      count--;
+      if (count < 0) {
+         count = sliderCard.length - 1;
+      }
+      rollSlider()
+
+      function rollSlider() {
+         sliderLine.style.transform = 'translate(-' + count * width + 'px)';
+      }
+   }
+
+   document.addEventListener('touchstart', handleTouchStart, false);
+   document.addEventListener('touchmove', handleTouchMove, false);
+
+   let x1 = null;
+   let y1 = null;
+
+   function handleTouchStart(event) {
+      const firstTouch = event.touches[0];
+      x1 = firstTouch.clientX;
+      y1 = firstTouch.clientY;
+
+      console.log('tab-tab-tab');
+   }
+
+   function handleTouchMove(event) {
+      if (!x1 || !y1) {
+         return false;
+      }
+      let x2 = event.touches[0].clientX;
+      let y2 = event.touches[0].clientY;
+
+      let xDiff = x2 - x1;
+      let yDiff = y2 - y1;
+
+
+      if (Math.abs(xDiff) > Math.abs(yDiff)) {
+         if (xDiff > 0) {
+            prevSwipe();
+
+         }
+         else {
+            nextSwipe();
+         };
+      }
+      x1 = null;
+      y1 = null;
+   }
 }
 
-//validation
-
-document.addEventListener('DOMContentLoaded', function () {
-   const form = document.getElementById('form');
-   form.addEventListener('submit', formSend);
-
-   async function formSend(e) {
-      e.preventDefault();
-
-      let error = formValidate(form);
-
-      let formData = new FormData(form);
-      formData.append('file', formFile.files[0]);
-
-      if (error === 0) {
-         let response = await fetch('send-mail.php', {
-            method: 'POST',
-            body: formData
-         });
-         if (response.ok) {
-            let result = await response.json();
-            alert(result.message);
-            form.reset();
-
-            console.log('ok');
-         }
-
-      } else {
-         console.log('crash');
-      }
-   }
-
-   function formValidate(form) {
-      let error = 0;
-      let formReq = document.querySelectorAll('._req');
-
-      for (let index = 0; index < formReq.length; index++) {
-         const input = formReq[index];
-         formRemoveError(input);
-
-         if (input.classList.contains('_email')) {
-            if (emailTest(input)) {
-               formAddError(input);
-               error++;
-            }
-         } else {
-            if (input.value === '') {
-               formAddError(input);
-               error++;
-            }
-         }
-      }
-      return error;
-   }
-
-   function formAddError(input) {
-      input.parentElement.classList.add('_error');
-      input.classList.add('_error');
-   }
-
-   function formRemoveError(input) {
-      input.parentElement.classList.remove('_error');
-      input.classList.remove('_error');
-   }
-
-   function emailTest(input) {
-      return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-   }
-
-   const formFile = document.getElementById('formFile');
-
-   formFile.addEventListener('change', () => {
-      uploadFile(form.files[0]);
-   })
-
-});
 
 
-/* ANIMATION */
 
