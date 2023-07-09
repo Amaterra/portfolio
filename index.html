@@ -10,16 +10,23 @@
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="media.css">
-
-
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +35,6 @@
 </head>
 
 <body class="body">
-
    <section class="section-main">
 
       <!-- NAVIGATION -->
@@ -36,36 +42,47 @@
       <section class="section-main__menu">
          <img class="section-main__photo" src="images/portfolio-img.png" alt="my photo">
          <ul class="section-main__list">
-            <li class="list about-me active"><i class="fa-solid fa-house icon-nav"></i>About me</li>
-            <li class="list portfolio"><i class="fa-solid fa-image icon-nav"></i>Portfolio</li>
-            <li class="list contacts"><i class="fa-solid fa-address-card icon-nav"></i>Contact</li>
+            <div class="wrapper-list about-me active">
+               <i class="fa-solid fa-house icon-nav"></i>
+               <li class="list aboutmenav">About me</li>
+            </div>
+            <div class="wrapper-list portfolio ">
+               <i class="fa-solid fa-image icon-nav"></i>
+               <li class="list portfolionav"></i>Portfolio</li>
+            </div>
+            <div class="wrapper-list contacts ">
+               <i class="fa-solid fa-address-card icon-nav"></i>
+               <li class="list contactsnav"></i>Contact</li>
+            </div>
          </ul>
-
-         <a href="test.pdf" download="" class="download-button">Download
-            CV</a>
-
+         <a href="test.pdf" download="" class="download-button downloadbtnlaptop">Download CV</a>
       </section>
-
       <section class="section-content">
          <div class="section-content__background"></div>
 
          <!-- SECTION ABOUT ME -->
 
          <div class="section-content-main active-animation section-about-me show">
-
-            <h1 class="section-content-main__title">About Me</h1>
-
+            <div class="lang-switch">
+               <a href="#" Language="english" class="select language">EN</a>
+               <a href="#" Language="russian" class="language">RU</a>
+            </div>
+            <h1 class="section-content-main__title aboutme">About Me</h1>
             <img class="section-about-me__photo" src="images/portfolio-img.png" alt="my photo">
             <div class="section-about-me__discription">
-               <p class="section-about-me__text">
-                  We can also support keyboard users with this technique, by adding a tabindex of 0 to make each span
-                  keyboard focusable, and using a CSS :focus selector. This shows how flexible ::before and ::after can
-                  be, though for the most accessible experience a semantic disclosure widget created in some other way
+               <p class="section-about-me__text discription">
+                  We can also support keyboard users with this technique, by adding a tabindex of 0 to make each
+                  span
+                  keyboard focusable, and using a CSS :focus selector. This shows how flexible ::before and
+                  ::after
+                  can
+                  be, though for the most accessible experience a semantic disclosure widget created in some other
+                  way
                   (such as with details and summary elements) is likely to be more appropriate.</p>
             </div>
 
             <div class="section-skills">
-               <h3 class="section-skills__title">Skills</h3>
+               <h3 class="section-skills__title skills">Skills</h3>
                <ul class="section-skills__list">
                   <li>HTML</li>
                   <li>CSS</li>
@@ -78,13 +95,11 @@
          <!-- SECTION PORTFOLIO -->
 
          <div class="section-content-main section-portfolio">
-            <h1 class="section-portfolio__title">Portfolio</h1>
+            <h1 class="section-portfolio__title portfoliotitle">Portfolio</h1>
             <div class="wrapper">
                <span class="button-arrow-left" id="arrow-left"></span>
                <div class="slider">
-
                   <div class="section-portfolio__products slider-line" id="slider-line-cards">
-
                      <div class="section-portfolio__card interno slider-card">
                         <div class="section-portfolio__title-card">
                            <p class="section-portfolio__text">Interno</p>
@@ -92,7 +107,6 @@
                         <a href="https://amaterra.github.io/interno/" target=_blank><img class="section-portfolio__img"
                               src="images/interno-img.png"></a>
                      </div>
-
                      <div class="section-portfolio__card taste-eat slider-card">
                         <div class="section-portfolio__title-card">
                            <p class="section-portfolio__text">Taste Eat</p>
@@ -104,42 +118,32 @@
                </div>
                <span class="button-arrow-right" id="arrow-right"></span>
             </div>
-
-            <a class="download-button-for-portfolio" href="test.pdf" download="">Download CV</a>
-
+            <a class="download-button-for-portfolio downloadbtnmobile" href="test.pdf" download="">Download CV</a>
          </div>
 
          <!-- SECTION CONTACTS -->
 
          <div class="section-content-main section-contacts">
-            <h1 class="section-contacts__title">Contact</h1>
-
+            <h1 class="section-contacts__title contact">Contact</h1>
             <div class="section-contacts__contact-list">
-
-               <div class="section-contact">
-                  <a class="section-contacts__icon" href="https://github.com/Amaterra" target="_blank"><i
-                        class="fa-brands fa-github"></i></a>
+               <a class="section-contact" href="https://github.com/Amaterra" target="_blank"><i
+                     class="fa-brands fa-github"></i>
                   <p class="section-contact__contact">Amaterra</p>
-               </div>
-
-               <div class="section-contact">
-                  <a class="section-contacts__icon" href="tel:+37379561338"><i class="fa-solid fa-phone"></i></a>
+               </a>
+               <a class="section-contact" href="tel:+37379561338">
+                  <i class="fa-solid fa-phone"></i>
                   <p class="section-contact__contact">+373 795 613 38</p>
-               </div>
-
-               <div class="section-contact">
-                  <a class="section-contacts__icon" href="mailto:amate.ra@yandex.ru"> <i
-                        class="fa-regular fa-envelope"></i></a>
+               </a>
+               <a class="section-contact" href="mailto:amate.ra@yandex.ru">
+                  <i class="fa-regular fa-envelope"></i>
                   <p class="section-contact__contact">amate.ra@yandex.ru</p>
-               </div>
+               </a>
             </div>
-
-            <a class="button-send-message" href="mailto:amate.ra@yandex.ru">Send me message</a>
-
+            <a class="button-send-message message" href="mailto:amate.ra@yandex.ru">Send me
+               message</a>
          </div>
       </section>
    </section>
-
    <script src="script/script.js"></script>
 </body>
 

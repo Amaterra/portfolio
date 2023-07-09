@@ -13,6 +13,35 @@ body {
    height: 100%;
 }
 
+/* LANGUAGE */
+
+.lang-switch {
+   background-color: rgba(32, 32, 35, 0.3);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: absolute;
+   width: 60px;
+   height: 25px;
+   user-select: none;
+   right: 20px;
+   top: 30px;
+   padding: 2px 7px 0 7px;
+}
+
+.language {
+   text-decoration: none;
+   font-family: 'Ysabeau SC', sans-serif;
+   font-weight: 600;
+   font-size: 13px;
+   color: #808589;
+}
+
+.select {
+   color: aliceblue;
+   text-shadow: 0px 0px 10px #AEAEAE;
+}
+
 /* NAVIGATION */
 
 .section-main {
@@ -40,24 +69,20 @@ body {
    list-style: none;
    position: relative;
    top: 15%;
-   /* left: 50%;
-   transform: translateX(-50%); */
 }
 
 .list {
-   font-family: 'Raleway', sans-serif;
-   font-weight: 400;
+   font-family: 'Ysabeau SC', sans-serif;
+   font-weight: 500;
    color: #cdcfd1;
    text-transform: uppercase;
    font-size: 18px;
    letter-spacing: 5px;
    text-align: center;
-   margin-bottom: 27px;
    cursor: pointer;
 }
 
 .about-me::after,
-.skills::after,
 .portfolio::after {
    content: "";
    width: 13px;
@@ -68,43 +93,40 @@ body {
    background-color: aliceblue;
    position: relative;
    display: block;
+   margin-bottom: 27px;
 }
 
-.list.active {
-   text-shadow: 0.8px 0.8px 10px #ffffff;
-   color: #ffffff
+.wrapper-list.active {
+   text-shadow: 0px 0px 5px #FFFFFF;
+   color: #FFFFFF;
 }
 
 .download-button {
    background-color: rgba(205, 207, 209, 0.7);
    color: #323237;
-   padding: 18px 20px;
+   padding: 12px 20px;
    border: none;
    cursor: pointer;
    text-transform: uppercase;
-   font-family: 'Josefin Sans', sans-serif;
-   letter-spacing: 2px;
-   font-weight: 400;
+   letter-spacing: 1px;
    font-size: 12px;
-   transition: all 500ms ease-in-out;
-   /* left: 4%; */
+   transition: 1s;
    position: absolute;
    bottom: 5%;
    z-index: 10;
    text-decoration: none;
-
-
-
-
+   font-family: 'Ysabeau SC', sans-serif;
+   font-weight: 600;
 }
 
 .download-button:hover {
    background-color: #323237;
    color: #cdcfd1;
+   transition: 1s;
 }
 
 .section-content__background {
-   background-image: url(images/main-background.png);
+   background-image: url(images/main-background1.png);
    width: 100%;
    height: 100%;
    padding: 0;
@@ -135,23 +157,7 @@ body {
    display: none;
 }
 
-
-/* CONTENT */
-
-/* .section-content-main {
-   transform: translate(0px, 120%);
-   opacity: 0;
-   transition: all 5s ease 0s;
-}
-
-.section-content-main.active-animation {
-   transform: translate(0, 0);
-   opacity: 1;
-   transition: all 5s ease 0s;
-} */
-
 /* SECTION ABOUT ME */
-
 
 .section-about-me {
    display: none;
@@ -169,31 +175,33 @@ body {
    font-size: 40px;
    letter-spacing: 20px;
    text-transform: uppercase;
-   font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Jost', sans-serif;
 }
 
 .section-about-me__discription {
    width: 60%;
-   font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Poiret One', cursive;
+   letter-spacing: 1px;
    color: aliceblue;
    line-height: 30px;
    font-size: 20px;
-   font-weight: 200;
    margin-bottom: 5vw;
 }
 
 .section-skills__title {
    color: azure;
    font-size: 25px;
-   letter-spacing: 20px;
+   letter-spacing: 13px;
    text-transform: uppercase;
-   font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Jost', sans-serif;
    text-align: center;
    margin-bottom: 3vw;
 }
 
 .section-skills__list {
-   font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Poiret One', cursive;
+   font-weight: 400;
+   letter-spacing: 1px;
    color: aliceblue;
    line-height: 30px;
    font-size: 20px;
@@ -226,7 +234,7 @@ body {
    font-size: 40px;
    letter-spacing: 20px;
    text-transform: uppercase;
-   font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Jost', sans-serif;
 }
 
 .section-portfolio__products {
@@ -256,7 +264,8 @@ body {
    font-size: 20px;
    letter-spacing: 8px;
    text-transform: uppercase;
-   font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Jost', sans-serif;
+   font-weight: 500;
    width: 250px;
    text-align: center;
 }
@@ -278,7 +287,6 @@ body {
    position: relative;
    z-index: 2;
    width: 60%;
-   /* height: auto; */
    margin: auto;
 }
 
@@ -288,28 +296,29 @@ body {
    font-size: 40px;
    letter-spacing: 20px;
    text-transform: uppercase;
-   font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Jost', sans-serif;
 }
 
 .button-send-message {
-   padding: 18px 20px;
+   padding: 15px 20px;
    border: none;
    background-color: rgba(205, 207, 209, 0.7);
    cursor: pointer;
    text-transform: uppercase;
-   font-family: 'Josefin Sans', sans-serif;
-   letter-spacing: 2px;
-   font-weight: 400;
+   letter-spacing: 1px;
    font-size: 12px;
    position: relative;
    color: #323237;
-   transition: all 150ms ease-in-out;
+   transition: 1s;
    text-decoration: none;
+   font-family: 'Ysabeau SC', sans-serif;
+   font-weight: 600;
 }
 
 .button-send-message:hover {
    background-color: #323237;
    color: #cdcfd1;
+   transition: 1s;
 }
 
 .section-contacts__contact-list {
@@ -324,21 +333,20 @@ body {
 .section-contact {
    display: flex;
    gap: 15px;
-}
-
-.section-contacts__icon {
+   text-decoration: none;
    color: #cdcfd1;
    font-size: 25px;
    font-weight: 100;
 }
 
-.section-contacts__icon:hover {
+.section-contact:hover {
    text-shadow: 1px 1px 20px #cdcfd1;
 }
 
 .section-contact__contact {
-   font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Poiret One', cursive;
+   letter-spacing: 1px;
    color: aliceblue;
-   line-height: 30px;
+   line-height: 25px;
    font-size: 20px;
 }
