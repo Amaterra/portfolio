@@ -230,7 +230,7 @@ linkLang.forEach(elem => {
       langsSwitch.querySelector('.select').classList.remove('select');
       elem.classList.add('select');
 
-      let attr = elem.getAttribute("Language");
+      let attr = elem.getAttribute("hreflang");
 
       aboutMeNav.textContent = data[attr].aboutmenav;
       skillsNav.textContent = data[attr].skillsnav;
