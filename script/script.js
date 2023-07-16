@@ -24,7 +24,6 @@ tabPortfolio.addEventListener('click', function () {
    showAboutMe.classList.remove('show');
    showContacts.classList.remove('show');
    showSkills.classList.remove('show');
-
    init()
    rollSlider()
 });
@@ -34,7 +33,6 @@ tabContacts.addEventListener('click', function () {
    showAboutMe.classList.remove('show');
    showPortfolio.classList.remove('show');
    showSkills.classList.remove('show');
-
 });
 
 tabSkills.addEventListener('click', function () {
@@ -210,22 +208,17 @@ let data = {
 
 let langsSwitch = document.querySelector('.lang-switch');
 let linkLang = document.querySelectorAll('.language');
-
 let aboutMeNav = document.querySelector('.aboutmenav');
 let portfolioNav = document.querySelector('.portfolionav');
 let contactNav = document.querySelector('.contactsnav');
 let skillsNav = document.querySelector('.skillsnav');
-
 let downloadBtnLaptop = document.querySelector('.downloadbtnlaptop');
-
 let aboutMe = document.querySelector('.aboutme');
-
 let skills = document.querySelector('.skillstitle');
 let portfolioTitle = document.querySelector('.portfoliotitle');
 let contact = document.querySelector('.contact');
 let message = document.querySelector('.message');
 let downloadBtnMobile = document.querySelector('.downloadbtnmobile');
-
 let paragraphOne = document.querySelector('.paragraphone');
 let paragraphTwo = document.querySelector('.paragraphtwo');
 let paragraphThree = document.querySelector('.paragraphthree');
@@ -245,13 +238,11 @@ linkLang.forEach(elem => {
       contactNav.textContent = data[attr].contactsnav;
       downloadBtnLaptop.textContent = data[attr].downloadbtnlaptop;
       aboutMe.textContent = data[attr].aboutme;
-
       skills.textContent = data[attr].skillstitle;
       portfolioTitle.textContent = data[attr].portfolio;
       contact.textContent = data[attr].contact;
       message.textContent = data[attr].message;
       downloadBtnMobile.textContent = data[attr].downloadbtnmobile;
-
       paragraphOne.textContent = data[attr].paragraphone;
       paragraphTwo.textContent = data[attr].paragraphtwo;
       paragraphThree.textContent = data[attr].paragraphthree;
@@ -259,5 +250,3 @@ linkLang.forEach(elem => {
       tools.textContent = data[attr].tools;
    })
 });
-
-

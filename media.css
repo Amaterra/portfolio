@@ -103,7 +103,6 @@
    .stack-list,
    .tools-list {
       font-size: calc(14px + (20 - 14)*((100vw - 300px) / (1024 - 300)));
-
    }
 
    /* PORTFOLIO */
@@ -159,13 +158,6 @@
       font-size: 40px;
       letter-spacing: 15px;
    }
-
-   /* .section-about-me__text {
-      width: 80%;
-      text-align: justify;
-      font-size: 25px;
-      line-height: 45px;
-   } */
 }
 
 @media screen and (max-width: 700px) {
@@ -359,6 +351,4 @@
       font-size: 18px;
       letter-spacing: 5px;
    }
-
-
 }
