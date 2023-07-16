@@ -21,19 +21,19 @@ body {
    justify-content: space-between;
    align-items: center;
    position: absolute;
-   width: 60px;
-   height: 25px;
+   width: 70px;
+   height: 30px;
    user-select: none;
    right: 20px;
    top: 30px;
-   padding: 2px 7px 0 7px;
+   padding: 2px 8px 0 8px;
 }
 
 .language {
    text-decoration: none;
    font-family: 'Ysabeau SC', sans-serif;
    font-weight: 600;
-   font-size: 13px;
+   font-size: 15px;
    color: #808589;
 }
 
@@ -68,7 +68,7 @@ body {
 .section-main__list {
    list-style: none;
    position: relative;
-   top: 15%;
+   top: 12%;
 }
 
 .list {
@@ -83,7 +83,8 @@ body {
 }
 
 .about-me::after,
-.portfolio::after {
+.portfolio::after,
+.portfolio::before {
    content: "";
    width: 13px;
    height: 1px;
@@ -157,7 +158,7 @@ body {
    display: none;
 }
 
-/* SECTION ABOUT ME */
+/* ABOUT ME */
 
 .section-about-me {
    display: none;
@@ -180,7 +181,7 @@ body {
 
 .section-about-me__discription {
    width: 60%;
-   font-family: 'Poiret One', cursive;
+   font-family: 'Ysabeau Infant', sans-serif;
    letter-spacing: 1px;
    color: aliceblue;
    line-height: 30px;
@@ -188,32 +189,52 @@ body {
    margin-bottom: 5vw;
 }
 
-.section-skills__title {
-   color: azure;
-   font-size: 25px;
-   letter-spacing: 13px;
-   text-transform: uppercase;
-   font-family: 'Jost', sans-serif;
-   text-align: center;
-   margin-bottom: 3vw;
+.section-about-me__photo {
+   display: none;
 }
 
-.section-skills__list {
-   font-family: 'Poiret One', cursive;
-   font-weight: 400;
+/* SKILLS */
+
+.section-skills {
+   display: none;
+}
+
+.section-skills.show {
+   display: block;
+   position: relative;
+   text-align: center;
+   z-index: 10;
+}
+
+.section-skills__title {
+   margin-bottom: 7vw;
+   color: azure;
+   font-size: 40px;
+   letter-spacing: 20px;
+   text-transform: uppercase;
+   font-family: 'Jost', sans-serif;
+}
+
+.section-skills__title-two {
+   color: azure;
+   font-size: 25px;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   font-family: 'Jost', sans-serif;
+   margin: 1.2vw 0;
+}
+
+.stack-list,
+.tools-list {
+   font-family: 'Ysabeau Infant', sans-serif;
    letter-spacing: 1px;
    color: aliceblue;
    line-height: 30px;
    font-size: 20px;
-   font-weight: 200;
-   list-style: none;
-   display: grid;
-   justify-items: center;
-   grid-template-columns: repeat(2, 1fr);
 }
 
-.section-about-me__photo {
-   display: none;
+.stack-list {
+   margin-bottom: 5vw;
 }
 
 /* PORTFOLIO */
@@ -344,7 +365,7 @@ body {
 }
 
 .section-contact__contact {
-   font-family: 'Poiret One', cursive;
+   font-family: 'Ysabeau Infant', sans-serif;
    letter-spacing: 1px;
    color: aliceblue;
    line-height: 25px;

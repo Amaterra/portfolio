@@ -12,9 +12,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +22,10 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="media.css">
@@ -46,6 +48,10 @@
                <i class="fa-solid fa-house icon-nav"></i>
                <li class="list aboutmenav">About me</li>
             </div>
+            <div class="wrapper-list skills">
+               <i class="fa-solid fa-book-open icon-nav"></i>
+               <li class="list skills skillsnav">Skills</li>
+            </div>
             <div class="wrapper-list portfolio ">
                <i class="fa-solid fa-image icon-nav"></i>
                <li class="list portfolionav"></i>Portfolio</li>
@@ -62,7 +68,7 @@
 
          <!-- SECTION ABOUT ME -->
 
-         <div class="section-content-main active-animation section-about-me show">
+         <div class="section-content-main active-animation section-about-me  show">
             <div class="lang-switch">
                <a href="#" Language="english" class="select language">EN</a>
                <a href="#" Language="russian" class="language">RU</a>
@@ -70,28 +76,31 @@
             <h1 class="section-content-main__title aboutme">About Me</h1>
             <img class="section-about-me__photo" src="images/portfolio-img.png" alt="my photo">
             <div class="section-about-me__discription">
-               <p class="section-about-me__text discription">
-                  We can also support keyboard users with this technique, by adding a tabindex of 0 to make each
-                  span
-                  keyboard focusable, and using a CSS :focus selector. This shows how flexible ::before and
-                  ::after
-                  can
-                  be, though for the most accessible experience a semantic disclosure widget created in some other
-                  way
-                  (such as with details and summary elements) is likely to be more appropriate.</p>
-            </div>
-
-            <div class="section-skills">
-               <h3 class="section-skills__title skills">Skills</h3>
-               <ul class="section-skills__list">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>Git</li>
-               </ul>
+               <div class="section-about-me__text">
+                  <p class="discription__paragraph-one paragraphone">Hello, my name is Olesia, and I am a beginner
+                     front-end developer. I have been self-learning since 2022. I moved to Moldova for permanent
+                     residence from
+                     Russia in 2021.</p><br>
+                  <p class="discription__paragraph-two paragraphtwo">I am at the beginning of my journey, so I am
+                     eager to learn a
+                     lot and conquer new heights. Previous work experiences have helped me develop skills such as fast
+                     learning, adaptability, teamwork, effective communication, and presenting information concisely and
+                     understandably.</p><br>
+                  <p class="discription__paragraph-three paragraphthree">I aspire to grow in the IT field and am
+                     confident in my
+                     ability to become a valuable team member.</p>
+               </div>
             </div>
          </div>
 
+         <!-- SECTION SKILLS -->
+         <div class="section-content-main section-skills">
+            <h3 class="section-skills__title skillstitle">Skills</h3>
+            <h4 class="section-skills__title-two stack">Technologies stack:</h4>
+            <p class="stack-list">HTML 5, CSS 3, SASS/SCSS, JavaScript, React</p>
+            <h4 class="section-skills__title-two tools">Tools:</h4>
+            <p class="tools-list">Visual Studio Code, Figma, Node.js, Git, GitHub, npm</p>
+         </div>
          <!-- SECTION PORTFOLIO -->
 
          <div class="section-content-main section-portfolio">

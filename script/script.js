@@ -3,10 +3,12 @@
 const tabAboutMe = document.querySelector('.wrapper-list');
 const tabPortfolio = document.querySelector('.portfolio');
 const tabContacts = document.querySelector('.contacts');
+const tabSkills = document.querySelector('.skills');
 
 const showAboutMe = document.querySelector('.section-about-me');
 const showPortfolio = document.querySelector('.section-portfolio');
 const showContacts = document.querySelector('.section-contacts');
+const showSkills = document.querySelector('.section-skills');
 
 const activeMenu = document.querySelector('.section-main__list');
 
@@ -14,22 +16,32 @@ tabAboutMe.addEventListener('click', function () {
    showAboutMe.classList.add('show');
    showPortfolio.classList.remove('show');
    showContacts.classList.remove('show');
+   showSkills.classList.remove('show');
 });
 
 tabPortfolio.addEventListener('click', function () {
    showPortfolio.classList.add('show');
    showAboutMe.classList.remove('show');
    showContacts.classList.remove('show');
+   showSkills.classList.remove('show');
 
    init()
    rollSlider()
 });
 
 tabContacts.addEventListener('click', function () {
-   showContacts.classList.add('show', 'active-animation');
-   showAboutMe.classList.remove('show', 'active-animation');
-   showPortfolio.classList.remove('show', 'active-animation');
+   showContacts.classList.add('show');
+   showAboutMe.classList.remove('show');
+   showPortfolio.classList.remove('show');
+   showSkills.classList.remove('show');
 
+});
+
+tabSkills.addEventListener('click', function () {
+   showSkills.classList.add('show');
+   showAboutMe.classList.remove('show');
+   showPortfolio.classList.remove('show');
+   showContacts.classList.remove('show');
 });
 
 //navigation highlight
@@ -160,29 +172,39 @@ if (window.screen.width <= 700) {
 let data = {
    english: {
       aboutmenav: 'About me',
+      skillsnav: 'Skills',
       portfolionav: 'Portfolio',
       contactsnav: 'Contacts',
       downloadbtnlaptop: 'Download CV',
       aboutme: 'About me',
-      discription: 'We can also support keyboard users with this technique, by adding a tabindex of 0 to make each span keyboard focusable, and using a CSS focus selector.This shows how flexible:: before and after can be, though for the most accessible experience a semantic disclosure widget created in some other way such as with details and summary elements is likely to be more appropriate',
-      skills: 'Skills',
+      skillstitle: 'Skills',
       portfolio: 'Portfolio',
       contact: 'Contacts',
       message: 'Send me message',
       downloadbtnmobile: 'Download CV',
+      stack: 'Technologies stack:',
+      tools: 'Tools:',
+      paragraphone: 'Hello, my name is Olesia, and I am a beginner front-end developer. I have been self-learning since 2022. I moved to Moldova for permanent residence from Russia in 2021. ',
+      paragraphtwo: 'I am at the beginning of my journey, so I am eager to learn a lot and conquer new heights. Previous work experiences have helped me develop skills such as fast learning, adaptability, teamwork, effective communication, and presenting information concisely and understandably.',
+      paragraphthree: 'I aspire to grow in the IT field and am confident in my ability to become a valuable team member.',
    },
    russian: {
       aboutmenav: 'Обо мне',
+      skillsnav: 'Навыки',
       portfolionav: 'Портфолио',
       contactsnav: 'Контакты',
       downloadbtnlaptop: 'Скачать CV',
       aboutme: 'Обо мне',
-      discription: 'Тот, кто прокрастинирует, аргументируя тем, что нужно просто  ещё собрать какие-то недостающие пазлы, получив необходимые знания и информацию — тот просто боится. Тот, кто много знает — часто имеет много страхов, потому что имеющиеся знания позволяют ему иметь шире картину мира, а значит и видеть больше поводов облажаться. Вместо того, чтобы ещё больше упиваться книгами и курсами.',
-      skills: 'Навыки',
+      skillstitle: 'Навыки',
       portfolio: 'Портфолио',
       contact: 'Контакты',
       message: 'Отправить сообщение',
       downloadbtnmobile: 'Скачать CV',
+      stack: 'Стек технологий:',
+      tools: 'Инструменты:',
+      paragraphone: 'Привет, меня зовут Олеся, и я начинающий front-end разработчик. Самостоятельно обучаюсь с 2022 года. Переехала в Молдову на постоянное место жительства из России в 2021 году.',
+      paragraphtwo: 'Я нахожусь в начале своего пути, поэтому готова много учиться и покорять новые вершины. Предыдущие места работы помогли мне развить навыки быстрого обучения, адаптации к новым условиям, работы в коллективе, а также умение коммуницировать и доносить информацию доступным языком.',
+      paragraphthree: 'Я стремлюсь к развитию в IT-сфере и уверена в своей способности стать ценным участником команды.',
    }
 }
 
@@ -192,14 +214,23 @@ let linkLang = document.querySelectorAll('.language');
 let aboutMeNav = document.querySelector('.aboutmenav');
 let portfolioNav = document.querySelector('.portfolionav');
 let contactNav = document.querySelector('.contactsnav');
+let skillsNav = document.querySelector('.skillsnav');
+
 let downloadBtnLaptop = document.querySelector('.downloadbtnlaptop');
+
 let aboutMe = document.querySelector('.aboutme');
-let discription = document.querySelector('.discription');
-let skills = document.querySelector('.skills');
+
+let skills = document.querySelector('.skillstitle');
 let portfolioTitle = document.querySelector('.portfoliotitle');
 let contact = document.querySelector('.contact');
 let message = document.querySelector('.message');
 let downloadBtnMobile = document.querySelector('.downloadbtnmobile');
+
+let paragraphOne = document.querySelector('.paragraphone');
+let paragraphTwo = document.querySelector('.paragraphtwo');
+let paragraphThree = document.querySelector('.paragraphthree');
+let stack = document.querySelector('.stack');
+let tools = document.querySelector('.tools');
 
 linkLang.forEach(elem => {
    elem.addEventListener("click", () => {
@@ -209,16 +240,23 @@ linkLang.forEach(elem => {
       let attr = elem.getAttribute("Language");
 
       aboutMeNav.textContent = data[attr].aboutmenav;
+      skillsNav.textContent = data[attr].skillsnav;
       portfolioNav.textContent = data[attr].portfolionav;
       contactNav.textContent = data[attr].contactsnav;
       downloadBtnLaptop.textContent = data[attr].downloadbtnlaptop;
       aboutMe.textContent = data[attr].aboutme;
-      discription.textContent = data[attr].discription;
-      skills.textContent = data[attr].skills;
+
+      skills.textContent = data[attr].skillstitle;
       portfolioTitle.textContent = data[attr].portfolio;
       contact.textContent = data[attr].contact;
       message.textContent = data[attr].message;
       downloadBtnMobile.textContent = data[attr].downloadbtnmobile;
+
+      paragraphOne.textContent = data[attr].paragraphone;
+      paragraphTwo.textContent = data[attr].paragraphtwo;
+      paragraphThree.textContent = data[attr].paragraphthree;
+      stack.textContent = data[attr].stack;
+      tools.textContent = data[attr].tools;
    })
 });
 
