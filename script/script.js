@@ -180,7 +180,7 @@ let data = {
       contact: 'Contacts',
       message: 'Send me message',
       downloadbtnmobile: 'Download CV',
-      stack: 'Technologies stack:',
+      stack: 'Technology stack:',
       tools: 'Tools:',
       paragraphone: 'Hello, my name is Olesia, and I am a beginner front-end developer. I have been self-learning since 2022. I moved to Moldova for permanent residence from Russia in 2021. ',
       paragraphtwo: 'I am at the beginning of my journey, so I am eager to learn a lot and conquer new heights. Previous work experiences have helped me develop skills such as fast learning, adaptability, teamwork, effective communication, and presenting information concisely and understandably.',
